@@ -13,6 +13,7 @@ public class MainForm extends JFrame {
         add(rootPanel);
         setTitle("Stack and Queue");
         setSize(300,300);
+        // Terminate process if close the main widow
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         // Show stack form when click
@@ -24,8 +25,7 @@ public class MainForm extends JFrame {
             }
         });
 
-        // Show queue form when click
-        // Terminate process if close the main widow
+        // Show queue form when click        
         btnQueue.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
